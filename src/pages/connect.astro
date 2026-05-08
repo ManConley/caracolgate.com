@@ -1,0 +1,179 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Connect – Cara Colgate, LICSW" currentPage="connect">
+  <div class="hero-image">
+    <img
+      src="/images/connect-fern.jpg"
+      alt="A young fern frond unfurling"
+    />
+  </div>
+
+  <div class="connect-content">
+    <p class="intro">
+      You can contact me using the form below or directly via email or phone.
+    </p>
+
+    <section class="contact-details">
+      <h2>Location &amp; Contact Details</h2>
+      <p>
+        Address: <a
+          href="https://maps.google.com/?q=51+River+Street+Wellesley+MA+02481"
+          target="_blank"
+          rel="noopener noreferrer"
+        >51 River Street, Wellesley MA 02481</a>
+      </p>
+      <p>Phone: <a href="tel:6179038115">(617) 903-8115</a></p>
+      <p>Email: <a href="mailto:cara@caracolgate.com">cara@caracolgate.com</a></p>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Contact Form</h2>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="contact-form"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com" />
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="How can I help you?"></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .hero-image {
+    margin-bottom: 2.5rem;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .connect-content {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+  }
+
+  .contact-details {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-details p {
+    margin-bottom: 0.4rem;
+  }
+
+  .contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  input[type="email"],
+  textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    padding: 0.6rem 0;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.2s;
+    resize: vertical;
+    width: 100%;
+  }
+
+  input[type="email"]:focus,
+  textarea:focus {
+    border-bottom-color: var(--accent);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #9aa3ad;
+  }
+
+  button[type="submit"] {
+    align-self: center;
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.75rem 2.5rem;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 0.5rem;
+  }
+
+  button[type="submit"]:hover {
+    background: var(--accent-hover);
+  }
+
+  button[type="submit"]:active {
+    transform: scale(0.98);
+  }
+</style>

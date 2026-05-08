@@ -1,0 +1,111 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="More Info – Cara Colgate, LICSW" currentPage="info">
+  <div class="info-layout">
+    <img
+      src="/images/office.jpg"
+      alt="Welcoming therapy office with comfortable chairs and warm lighting"
+      class="office-image"
+    />
+    <div class="info-content">
+      <p class="contact-link">
+        For address and contact information, please <a href="/connect/">click here</a>.
+      </p>
+
+      <section>
+        <h2>Rates &amp; Insurance</h2>
+        <p>My rate is $160 for a 50 minute session.</p>
+        <p>
+          I am currently empaneled by Blue Cross/Blue Shield. In addition, I am happy to provide
+          you with an invoice or "super bill" to submit to your insurance company for reimbursement
+          as an "out-of-network" provider. I recommend that you contact your health insurance
+          company first to find out about your specific out-of-network coverage.
+        </p>
+        <p>
+          Also note that Health Spending or Flexible Spending Accounts often consider therapy an
+          approved expense.
+        </p>
+      </section>
+
+      <section>
+        <h2>Preliminary Assessments</h2>
+        <p>
+          When working with a child, I prefer to meet with the parent(s) before seeing the child.
+          When there are school concerns, ideally I would also observe in the classroom before
+          meeting the child.
+        </p>
+      </section>
+
+      <section>
+        <h2>Cancellation Policy</h2>
+        <p>
+          I save your appointment time for you. If you are unable to attend a session, please let
+          me know 48 hours prior to the appointment to avoid being charged for the session.
+        </p>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .info-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .office-image {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    position: sticky;
+    top: 1rem;
+  }
+
+  .contact-link {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    .info-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .office-image {
+      max-width: 260px;
+      margin: 0 auto;
+      position: static;
+    }
+  }
+</style>

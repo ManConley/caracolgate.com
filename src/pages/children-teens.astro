@@ -1,0 +1,92 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Children & Teens – Cara Colgate, LICSW" currentPage="children">
+  <div class="page-intro">
+    <div class="intro-text">
+      <p>
+        Are you concerned about your child? Do they need support because of a loss, family or
+        school issue, challenging emotions or learning difficulties?
+      </p>
+      <p>
+        Working with children and families over the last 20 years has given me an in-depth
+        understanding of child and adolescent development. It can be daunting to figure out why
+        your child or teen is having challenges and what kind of support they need. My role is to
+        help them gain resilience and skills to navigate their world, and to help you more
+        effectively support your child.
+      </p>
+    </div>
+    <img
+      src="/images/children-hands.jpg"
+      alt="Adult and child hands held together"
+      class="page-image"
+    />
+  </div>
+
+  <p>
+    With younger children, I rely on play therapy and cognitive behavioral therapy (CBT) in my
+    work to help build coping skills, empathy, and better social skills for children in a
+    developmentally-appropriate manner. Play is the primary language for children, so I encourage
+    children to express and explore thoughts and feelings through various forms of play including
+    sand tray and art therapy. I also use CBT to teach skills that can be utilized outside of our
+    sessions, helping children recognize their own emotions, notice and critically evaluate their
+    thoughts, and use adaptive behavioral strategies, mindfulness, and other self-soothing
+    techniques to remain grounded in difficult situations or when having big emotions.
+  </p>
+
+  <p>
+    With adolescents, I focus on CBT, expressive and talk therapy. Therapy reinforces the message
+    that your child's thoughts and feelings are important, and that talking about issues and
+    thoughtful problem solving are important life tools. Young people also often appreciate the
+    chance to explore their relationships, goals and perspectives with an adult outside their
+    family.
+  </p>
+
+  <p>
+    Effective child and adolescent therapy relies on your involvement, so my goal is to partner
+    with you to support your child. Collaboration with teachers and other adults can also have a
+    profound impact, so I encourage phone or in-person consultations when appropriate.
+  </p>
+
+  <p>
+    It's important that you find a therapist who is the right fit for your child. I'm glad to
+    answer any questions you have about my practice, therapy or how to find help. Please{' '}
+    <a href="/connect/">contact me</a> to set up an introductory phone call.
+  </p>
+</Base>
+
+<style>
+  .page-intro {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    align-items: start;
+  }
+
+  .intro-text p {
+    margin-bottom: 1.2rem;
+  }
+
+  .page-image {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  }
+
+  p {
+    margin-bottom: 1.3rem;
+  }
+
+  @media (max-width: 600px) {
+    .page-intro {
+      grid-template-columns: 1fr;
+    }
+
+    .page-image {
+      max-width: 260px;
+      margin: 0 auto;
+    }
+  }
+</style>
