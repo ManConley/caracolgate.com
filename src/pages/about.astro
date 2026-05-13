@@ -3,95 +3,39 @@ import Base from '../layouts/Base.astro';
 ---
 
 <Base title="About Me – Cara Colgate, LICSW" currentPage="about">
-  <div class="about-intro">
-    <img
+  <div class="content">
+    <img class="upper-left"
       src="/images/cara-headshot.jpg"
       alt="Cara Colgate, LICSW"
       class="headshot"
     />
-    <div class="intro-text">
-      <p>
-        I am a clinical social worker with twenty years of experience supporting adults, children
-        and families. It has been an honor to witness people grow and change. I have seen how the
-        therapeutic process can instill hope, motivate change and lead to greater fulfillment.
-      </p>
-      <p>
-        After graduating from Smith College School for Social Work, I completed a year-long
-        fellowship at Children's Hospital, Boston in the adolescent and young adult clinic. Since
-        then, I have worked with clients of all ages, from pre-school aged children to adults in
-        hospice care. I have lived and worked in different countries, which has given me a deep
-        appreciation for the cultural values that influence us.
-      </p>
-      <p>
-        My training is rooted in psychodynamic theory and focuses on a strength-based approach.
-        I have specialized training in cognitive behavioral therapy, grief and bereavement, sand
-        tray therapy and parent-child psychotherapy. I also have a deep appreciation for 12-Step
-        programs and recovery work.
-      </p>
+    <p>I am a clinical social worker with twenty-five years of experience supporting adults, couples and families. It has been an honor to witness people grow and change. I have seen how the therapeutic process can instill hope, motivate change and lead to greater fulfillment.</p>
+    <p>After graduating from Smith College School for Social Work, I completed a year-long fellowship at Children's Hospital, Boston in the adolescent and young adult clinic. Since then, I have worked with clients of all ages, from pre-school aged children to adults in hospice care. I have lived and worked in different countries, which has given me a deep appreciation for the cultural values that influence us.</p>
+    <p>My training is rooted in psychodynamic theory and focuses on a strength-based approach. While I have specialized training in cognitive behavioral therapy, grief and bereavement, sand tray therapy and parent-child psychotherapy, my main approach now is Internalized Family System’s therapy (IFS or “Parts Therapy”).  I am a Level 2 IFS/IFIO trained therapist and engage in ongoing training and peer-supervision.  I also have a deep appreciation for 12-Step programs and recovery work.</p>
+    <p>I am licensed to practice in the state of Massachusetts (#121138).</p>
+
+    <div class="education">
+      <h2>Education and Training</h2>
+      <ul>
+        <li>Master of Social Work, Smith College School for Social Work, 2003</li>
+        <li>
+          Post-Graduate Fellowship in Adolescent and Young Adult Medicine, Children's Hospital,
+          Boston, 2003–04
+        </li>
+        <li>Sand Tray Training Institute of New Mexico, Level 1, Corrales, NM 2005</li>
+        <li>Trust-Based Relational Interventions, Texas Christian University, July–August 2009</li>
+        <li>Child Trauma Training Institute Certificate Program (CTI), 2009–10</li> 
+        <li>Child Life and Attention Skills Program, University of California in San Francisco, 2010–11</li>
+        <li>IFS Intensive Training, 2021-22</li>
+        <li>IFS Level 1 Training, 2023</li>
+
+      </ul>
     </div>
-  </div>
-
-  <p class="full-width">
-    Most recently, I have worked as a school counselor in both public and private schools
-    supporting students, families and teachers. During my decade in schools, I have experienced
-    how important collaboration with school teams and parents can be for children.
-  </p>
-
-  <p class="full-width license">
-    I am licensed to practice in the state of Massachusetts (#121138).
-  </p>
-
-  <div class="education">
-    <h2>Education and Training</h2>
-    <ul>
-      <li>Master of Social Work, Smith College School for Social Work, 2003</li>
-      <li>
-        Post-Graduate Fellowship in Adolescent and Young Adult Medicine, Children's Hospital,
-        Boston, 2003–04
-        <ul>
-          <li>Sand Tray Training Institute of New Mexico, Level 1, Corrales, NM 2005</li>
-        </ul>
-      </li>
-      <li>Trust-Based Relational Interventions, Texas Christian University, July–August 2009</li>
-      <li>
-        Child Trauma Training Institute Certificate Program (CTI), 2009–2010
-        <ul>
-          <li>Child Life and Attention Skills Program, University of California in San Francisco, 2010–2011</li>
-        </ul>
-      </li>
-    </ul>
   </div>
 </Base>
 
+
 <style>
-  .about-intro {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-    align-items: start;
-  }
-
-  .headshot {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-  }
-
-  .intro-text p {
-    margin-bottom: 1.2rem;
-  }
-
-  .full-width {
-    margin-bottom: 1.2rem;
-    text-align: center;
-  }
-
-  .license {
-    font-style: italic;
-    color: var(--text-muted);
-  }
-
   .education {
     margin-top: 2.5rem;
     padding-top: 2rem;
@@ -107,10 +51,6 @@ import Base from '../layouts/Base.astro';
   .education ul {
     max-width: 680px;
     margin: 0 auto;
-  }
-
-  .education li {
-    margin-bottom: 0.5rem;
   }
 
   @media (max-width: 600px) {

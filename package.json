@@ -12,7 +12,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.3.1"
+    "@fontsource/montserrat": "^5.2.8",
+    "@fontsource/roboto": "^5.2.10",
+    "@tailwindcss/vite": "^4.2.4",
+    "astro": "^6.3.1",
+    "tailwindcss": "^4.2.4"
   },
   "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
 }

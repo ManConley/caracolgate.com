@@ -11,7 +11,6 @@ const { title = 'Cara Colgate, LICSW', currentPage = '' } = Astro.props;
 const navLinks = [
   { label: 'Home', href: '/', key: 'home' },
   { label: 'About Me', href: '/about/', key: 'about' },
-  { label: 'Children & Teens', href: '/children-teens/', key: 'children' },
   { label: 'Adults', href: '/adults/', key: 'adults' },
   { label: 'More Info', href: '/more-info/', key: 'info' },
   { label: 'Connect', href: '/connect/', key: 'connect' },
@@ -56,7 +55,7 @@ const navLinks = [
       <slot />
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p>51 River Street, Wellesley MA 02481</p>
       <p>(617) 903-8115 | <a href="mailto:cara@caracolgate.com">cara@caracolgate.com</a></p>
       <p class="disclaimer">Please note: The use of this website does not constitute a therapist-client relationship.</p>
@@ -205,11 +204,10 @@ const navLinks = [
     background: var(--bg-footer);
     border-top: 1px solid var(--border);
     text-align: center;
-    padding: 1.5rem 2rem;
+    padding: 1rem 1rem;
     font-size: 0.8rem;
     letter-spacing: 0.04em;
     color: var(--text-muted);
-    line-height: 1.8;
   }
 
   footer a {
