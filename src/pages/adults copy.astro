@@ -13,3 +13,33 @@ import Base from '../layouts/Base.astro';
     <p>If you’re struggling to find your way, heal from past experiences, or connect and communicate differently, please <a href="/connect/">reach out</a> to discuss how I can help.</p>
   </div>
 </Base>
+
+<style>
+  .education {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .education h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .education ul {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .about-intro {
+      grid-template-columns: 1fr;
+    }
+
+    .headshot {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+</style>
